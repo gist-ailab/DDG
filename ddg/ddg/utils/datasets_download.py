@@ -3,7 +3,7 @@ from ddg.datasets import *
 
 
 class TestDatasetsDownload(unittest.TestCase):
-    ROOT = './data'
+    ROOT = '/ailab_mat/dataset/DDG'
 
     def test_PACS_download(self):
         print('test PACS dataset download')
