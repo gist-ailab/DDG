@@ -33,7 +33,7 @@ class PACS(DomainFolder):
                     'Sketch': {'train': 3531, 'val': 398}
                     }
 
-    def __init__(self, root, domains, splits, transform=None, target_transform=None, download=False):
+    def __init__(self, root, domains, splits, transform=None, target_transform=None, download=True):
 
         root = os.path.join(root, 'PACS')
 
@@ -77,3 +77,6 @@ class PACS(DomainFolder):
                 self._parse_split(split=split, split_file=split_file,
                                   raw_folder=raw_folder, domain_folder=domain_folder)
         shutil.rmtree(raw_folder)
+
+# if __name__=='main':
+#     pacs = PACS()

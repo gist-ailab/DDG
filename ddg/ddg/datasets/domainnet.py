@@ -59,7 +59,7 @@ class DomainNet(DomainFolder):
                                         splits=splits,
                                         transform=transform,
                                         target_transform=target_transform,
-                                        download=download)
+                                        download=False)
 
     def download_data(self):
 
